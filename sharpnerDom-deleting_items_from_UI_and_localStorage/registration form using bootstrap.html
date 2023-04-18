@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form - using bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <style>
+        body {
+   background-image:url(https://i.natgeofe.com/n/15ec8dec-df7c-45af-a0ae-08d4e906a134/belvedere-castle.jpg) ;
+   background-repeat: no-repeat;
+   background-attachment:fixed;
+   background-size:cover;
+   background-position:relative;
+}
+.error {
+    background: black;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="d-flex justify-content-center">
+        <div class=" border border-2 border-light rounded-3 p-2 m-5" style="background:linear-gradient(white,skyblue)">
+            <h3 style="text-align: center;">Book a call</h3>
+            <p style="text-align: center;">Book a call slot and our representative will call you within 1hr of selected time.</p>  
+            <hr>          
+            <form id="my-form">
+                <div class="msg"></div>
+
+                <label for="name" class="form-label" >Name:</label><br>
+                <input type="text" id="name" name="name"  class="form-control">
+                <br>
+                <label for="email" class="form-label">Email:</label><br>
+                <input type="email" id="email" name="email" class="form-control">
+                <br>
+                <label for="phone" class="form-label">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" class="form-control">
+                <br>
+                <label for="date" class="form-label">Time for Call:</label><br>
+                <input type="datetime-local" id="date" name="date" class="form-control">
+                <br>
+                <button class="btn btn-dark  w-100">Get A Call</button>
+            </form>
+            <br>
+            <ul id="listOfItems"></ul>
+        </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
